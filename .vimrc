@@ -29,12 +29,16 @@ set laststatus=2
 filetype on                  " required
 set nu
 
+:set backspace=indent,eol,start
 autocmd Filetype python setlocal ts=4 sw=4 softtabstop=4 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype coffeescript setlocal ts=2 sw=2 expandtab
 autocmd Filetype coffee setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sw=2 expandtab
+autocmd Filetype sass setlocal ts=2 sw=2 expandtab
 
 set textwidth=80
 set ruler
