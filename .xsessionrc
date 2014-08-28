@@ -1,18 +1,4 @@
 #!/bin/bash
-
-# Load resources
-
-xrdb -merge .Xresources
-
-# Set up an icon tray
-stalonetray &
-
-# Fire up apps
-
-xscreensaver -no-splash &
-
-if [ -x /usr/bin/nm-applet ] ; then
-   nm-applet --sm-disable &
-fi
-
-exec xmonad
+xrandr --output HDMI-0 --left-of DVI-I-1
+xrandr --output HDMI-0 --above DP-0
+xrandr --output DVI-I-1 --above DVI-D-0
