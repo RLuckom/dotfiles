@@ -15,6 +15,14 @@
 				"priority": 50
 			},
 			{
+				"name": "date",
+				"args": {
+				     "istime": true,
+				     "format": "%H:%M:%S"
+				},
+				"priority": 10
+			},
+			{
 				"name": "branch",
 				"priority": 40
 			},
