@@ -18,9 +18,11 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'klen/python-mode'
 let g:pymode_rope = 0
 Bundle 'davidhalter/jedi-vim'
+Bundle 'mustache/vim-mustache-handlebars'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
+Bundle "pangloss/vim-javascript"
 call vundle#end()
 
 set laststatus=2

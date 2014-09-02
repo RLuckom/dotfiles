@@ -1,9 +1,15 @@
+sudo apt-get install git
 sudo apt-get install gnome-panel
 sudo apt-get install python-pip
 pip install --user git+git://github.com/Lokaltog/powerline
-cp ./.vimrc ~/.
-cp ./.profile ~/.
-cp ./.bashrc ~/.
+ln -s ./.vimrc ~/.
+ln -s ./.profile ~/.
+ln -s ./.bashrc ~/.
+mkdir -p ~/.vim/bundle
+cd ~/.vim/bundle
+git clone https://github.com/gmarik/Vundle.vim.git
+cd -
 mkdir ~/.xmonad
-cp ./xmonad.hs ~/.xmonad/.
+ln -s ./xmonad.hs ~/.xmonad/.
+ln -s ./powerline ~/.config/powerline
 source ~/.profile
