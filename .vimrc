@@ -41,6 +41,10 @@ autocmd Filetype sql setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sw=2 expandtab
 autocmd Filetype sass setlocal ts=2 sw=2 expandtab
+autocmd Filetype handlebars setlocal ts=2 sw=2 expandtab
+autocmd Filetype html.handlebars setlocal ts=2 sw=2 expandtab
+autocmd Filetype mustache setlocal ts=2 sw=2 expandtab
+autocmd Filetype hbs setlocal ts=2 sw=2 expandtab
 
 set textwidth=80
 set ruler

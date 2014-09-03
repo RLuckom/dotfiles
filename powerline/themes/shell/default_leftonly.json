@@ -23,13 +23,13 @@
 				"priority": 10
 			},
 			{
-				"name": "branch",
-				"priority": 40
-			},
-			{
 				"module": "powerline.segments.shell",
 				"name": "cwd",
 				"priority": 10
+			},
+			{
+				"name": "branch",
+				"priority": 40
 			},
 			{
 				"module": "powerline.segments.shell",
