@@ -5,6 +5,7 @@ pip install --user git+git://github.com/Lokaltog/powerline
 ln -s ./.vimrc ~/.
 ln -s ./.profile ~/.
 ln -s ./.bashrc ~/.
+ln -s ./.screenrc ~/.
 mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim.git
