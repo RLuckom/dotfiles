@@ -14,14 +14,21 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-haml'
+Plugin 'vim-ruby/vim-ruby'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'klen/python-mode'
 let g:pymode_rope = 0
 Bundle 'mustache/vim-mustache-handlebars'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'StanAngeloff/php.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle "pangloss/vim-javascript"
+Bundle 'chase/vim-ansible-yaml'
+Bundle 'heartsentwined/vim-emblem'
 call vundle#end()
 
 set laststatus=2
@@ -31,15 +38,23 @@ filetype on                  " required
 set nu
 
 :set backspace=indent,eol,start
+au BufNewFile,BufRead *.md set filetype=markdown
 autocmd Filetype python setlocal ts=4 sw=4 softtabstop=4 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
+autocmd Filetype ansible setlocal textwidth=0 wrapmargin=0
+autocmd Filetype eruby setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
+autocmd Filetype php setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
+autocmd Filetype sh setlocal ts=2 sw=2 expandtab textwidth=0 wrapmargin=0
 autocmd Filetype coffeescript setlocal ts=2 sw=2 expandtab
 autocmd Filetype coffee setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
-autocmd Filetype scss setlocal ts=2 sw=2 expandtab
-autocmd Filetype sass setlocal ts=2 sw=2 expandtab
+autocmd Filetype sass setlocal textwidth=0 wrapmargin=0 ts=2 sw=2 expandtab
+autocmd Filetype scss setlocal textwidth=0 wrapmargin=0 ts=2 sw=2 expandtab
 autocmd Filetype handlebars setlocal ts=2 sw=2 expandtab
 autocmd Filetype html.handlebars setlocal ts=2 sw=2 expandtab
 autocmd Filetype mustache setlocal ts=2 sw=2 expandtab
